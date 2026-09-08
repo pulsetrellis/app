@@ -6,6 +6,8 @@ Vital signs brought into view with FinchNode. [Explore FinchNode](https://finchn
 
 ## What this app does
 
+Compare the two recorded blood pressure components as labeled bars, inspect the source measurement, and see the associated encounter. No clinical classification is computed.
+
 A standalone, responsive application for exploring a fixed **fictional** patient record. It calls FinchNode's live public synthetic API directly from your browser. Every clinical value comes from the API; there is no invented patient history, treatment advice, or real patient connection.
 
 ## Run locally
@@ -48,3 +50,7 @@ Semantic headings, labeled controls, keyboard focus, visible loading/error feedb
 ## License
 
 MIT. FinchNode and source-system names belong to their respective owners. This is an independent demonstration, not a claim of endorsement.
+
+## Optional domain
+
+`pulsetrellis.com` was unregistered in the .com registry on 2026-09-08. This is an availability signal, not a reservation; verify the registrar offer before purchasing. No domain has been bought.
