@@ -1,6 +1,6 @@
-# PulseTrellis
+# PulseTrellis — Vital signs viewer with measurement context
 
-Make room for the numbers that matter. Vital signs brought into view with FinchNode.
+Explore recorded vital measurements with original names, units, dates and source details. PulseTrellis makes the available context easy to review.
 
 **Site:** https://pulsetrellis.onrender.com/  
 **Repository:** https://github.com/pulsetrellis/app
@@ -56,3 +56,22 @@ A real patient must perform their own EHR authentication and consent; these test
 ## Artwork
 
 The homepage illustration/photo was generated for this site. It is decorative editorial imagery, not a real patient, clinician endorsement, or clinical-data example.
+
+<!-- public-discovery -->
+## Public guide and project context
+
+[Keeping the context beside your vital signs](https://pulsetrellis.onrender.com/guides/keep-context-with-vital-signs.html) — The small interface choices that keep a recorded measurement from becoming an unsupported conclusion.
+
+[Search PulseTrellis guides](https://pulsetrellis.onrender.com/guides/) · [About the site](https://pulsetrellis.onrender.com/about.html) · [Sitemap](https://pulsetrellis.onrender.com/sitemap.xml)
+
+PulseTrellis is a standalone product with its own interface, documentation and repository, prepared for independent business operation and continued development. Its FinchNode integration is documented in the code. Live production activation remains pending.
+
+## Public-page build and discoverability
+
+Edit `content/seo.json` for reviewed article text and site metadata. `npm run build` generates public HTML pages, a sitemap, social metadata and structured data, then prerenders the actual React homepage. `npm run test:seo` checks the built crawl surface after a build. Public guide search filters only public text in the browser; no patient data or search analytics enter the index.
+
+Keep canonical URLs on the deployed origin until a custom domain is registered and configured. Add only public, canonical pages to the sitemap. Validate links, mobile layout and the built HTML after editorial changes. Search engine indexing and rich results are not guaranteed.
+
+## Independent business handoff
+
+[Business handoff](HANDOFF.md) covers product identity, the receiving business’s production setup, domain migration, search verification and ongoing editorial maintenance.
