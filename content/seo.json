@@ -158,6 +158,88 @@
           "url": "https://github.com/pulsetrellis/app/blob/main/app/view.tsx"
         }
       ]
+    },
+    {
+      "slug": "designing-a-reliable-health-record-connection",
+      "title": "Designing a health-record connection that explains its state",
+      "description": "PulseTrellis examines hosted authorization, waiting states, one-time sync and reconnection as parts of a usable patient-record experience.",
+      "published": "2026-09-09",
+      "theme": "connection-experience",
+      "sections": [
+        {
+          "heading": "A connection button starts a sequence",
+          "paragraphs": [
+            "From a visitor’s perspective, importing health records begins with one button. Underneath, the application has to create a session, send the visitor through authorization, wait for completion and then decide whether it can retrieve the requested categories. Treating all of that as a single loading spinner hides useful information.",
+            "PulseTrellis has a narrow destination for that sequence: a view of vital observations and available encounter context. A clear connection flow helps the visitor understand why that view might not yet contain a measurement."
+          ]
+        },
+        {
+          "heading": "Give each state a concrete meaning",
+          "paragraphs": [
+            "The implemented service checks the hosted session and distinguishes completion from failed, canceled, expired or abandoned states. A completed authorization also needs an authorized category intersection before records can be read. The interface should explain whether a person needs to finish the hosted flow, wait, retry or reconnect.",
+            "A future operator can improve the wording around those states without weakening the checks behind them. An error message should identify a next action where one is available, rather than hide every failure behind an empty chart."
+          ],
+          "links": [
+            {
+              "label": "Connection-state handling in the server",
+              "url": "https://github.com/visitquill/finchapps-connect/blob/main/server.mjs"
+            }
+          ]
+        },
+        {
+          "heading": "Use the hosted handoff for the task it owns",
+          "paragraphs": [
+            "PulseTrellis uses a server-created FinchNode hosted connection to obtain the categories approved for the session. The callback returns to the site’s import route. The product’s own task is to help a visitor understand what happens before departure and what happens after returning.",
+            "That separation is useful for a focused vital-sign app: the measurement interface need not become a provider-login interface. The production credential remains on the server, and the client uses temporary access associated with its site origin."
+          ],
+          "links": [
+            {
+              "label": "FinchNode’s hosted connection approach",
+              "url": "https://finchnode.com/ehr-integration-api"
+            },
+            {
+              "label": "PulseTrellis import and return flow",
+              "url": "https://github.com/pulsetrellis/app/blob/main/app/main.tsx"
+            }
+          ]
+        },
+        {
+          "heading": "Explain what refreshing actually does",
+          "paragraphs": [
+            "The current server asks for a one-time transfer. Rechecking access while a page is open is not the same as continuously pulling new measurements from a provider or monitoring a wearable. A new observation at the source is not guaranteed to appear merely because a visitor clicks through existing entries.",
+            "Before adding a refresh control, define whether it checks a session, rereads an available snapshot or starts a new sync. Those are different operations, and the label should fit the one implemented."
+          ]
+        },
+        {
+          "heading": "Design reconnection as a normal outcome",
+          "paragraphs": [
+            "Temporary sessions can end, and the in-memory service loses them on restart. A usable interface should let the visitor understand that state and reconnect deliberately. It should not make a stale measurement look newly retrieved just to avoid a blank screen.",
+            "These connection details are documented in the source rather than claimed as completed live usage. PulseTrellis’s public site is available; patient imports still await production activation. Test the entire lifecycle in an appropriate environment before enabling it for an independent business."
+          ],
+          "links": [
+            {
+              "label": "PulseTrellis source and deployment notes",
+              "url": "https://github.com/pulsetrellis/app"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "question": "Does PulseTrellis continuously monitor vital signs?",
+          "answer": "No. The current connection requests a one-time transfer and the interface displays returned observations."
+        },
+        {
+          "question": "Does a session ending mean the provider record was deleted?",
+          "answer": "No. It means local access has ended. The source record and authorized sharing controls have separate lifecycles."
+        }
+      ],
+      "references": [
+        {
+          "label": "PulseTrellis public source repository",
+          "url": "https://github.com/pulsetrellis/app"
+        }
+      ]
     }
   ]
 }
