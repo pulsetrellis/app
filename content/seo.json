@@ -10,7 +10,7 @@
   "repositoryStatus": "public",
   "renderStatus": "live",
   "repository": "https://github.com/pulsetrellis/app",
-  "liveUrl": "https://pulsetrellis.onrender.com/",
+  "liveUrl": "https://pulsetrellis.com/",
   "homepage": "individually designed full website",
   "importRoute": "/#/import",
   "subject": "Vital signs viewer with measurement context",
