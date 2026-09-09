@@ -75,3 +75,10 @@ Keep canonical URLs on the custom domain configured in `content/seo.json`. Add o
 ## Independent business handoff
 
 [Business handoff](HANDOFF.md) covers product identity, the receiving business’s production setup, domain migration, search verification and ongoing editorial maintenance.
+
+## More product guides
+
+Browse guides to vital measurements, source units and dates, and why an encounter displayed nearby is not automatically linked to a selected observation.
+
+- [Reading a vital-sign record: value, unit, date and source](https://pulsetrellis.com/guides/read-vital-sign-record-context.html) — Use PulseTrellis to inspect a recorded vital measurement while keeping its unit, date and source context attached to the value.
+- [Why nearby encounters do not prove where a vital sign was taken](https://pulsetrellis.com/guides/encounters-beside-vital-signs.html) — Understand how PulseTrellis displays encounter context without asserting an unsupported link to a selected vital measurement.

@@ -51,5 +51,113 @@
     "About the FinchNode connection layer",
     "https://finchnode.com/"
   ],
-  "googleVerification": "TMdY5YFKPrSoVv3fC5iyCopvPVAm9JPLyi2OVYoBrOk"
+  "googleVerification": "TMdY5YFKPrSoVv3fC5iyCopvPVAm9JPLyi2OVYoBrOk",
+  "guideIntro": "Browse guides to vital measurements, source units and dates, and why an encounter displayed nearby is not automatically linked to a selected observation.",
+  "finchnodeContext": "PulseTrellis uses FinchNode for the authorized vital-sign and encounter categories. Its own display preserves each observation’s supplied name and unit, while keeping encounter context separate from any unproven relationship to a measurement.",
+  "articles": [
+    {
+      "slug": "read-vital-sign-record-context",
+      "title": "Reading a vital-sign record: value, unit, date and source",
+      "description": "Use PulseTrellis to inspect a recorded vital measurement while keeping its unit, date and source context attached to the value.",
+      "published": "2026-09-09",
+      "sections": [
+        {
+          "heading": "Begin with the measurement name",
+          "paragraphs": [
+            "Choose an observation from the list and read its source-provided label. PulseTrellis does not assume a familiar measurement type just because a value looks recognizable. The selected panel and detail view are the places to check what the entry actually contains."
+          ]
+        },
+        {
+          "heading": "Keep four details together",
+          "paragraphs": [
+            "A number copied without its surrounding fields can lose the meaning the record supplied. When preparing a question about a measurement, keep its name, quantity and unit, date and source together. If the source did not provide a reference range, the app says so."
+          ],
+          "items": [
+            "Select one observation at a time.",
+            "Read the displayed unit as part of the value.",
+            "Check the available date before comparing entries.",
+            "Expand “Show measurement details” to inspect the returned fields."
+          ]
+        },
+        {
+          "heading": "Use the detail view to resolve display questions",
+          "paragraphs": [
+            "The JSON panel shows the normalized observation behind the visible measurement. It can help you identify a missing field or see why a label was chosen. It does not establish a diagnosis or supply measurements that were never returned."
+          ]
+        },
+        {
+          "heading": "Avoid reading a trend into isolated entries",
+          "paragraphs": [
+            "PulseTrellis currently presents individual measurements. It does not infer target ranges, blood pressure categories or clinical trends. Discuss clinical meaning with an appropriate professional and refer to the original source when needed. Authorized imports remain pending production activation."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "question": "Does PulseTrellis classify a measurement as healthy or unhealthy?",
+          "answer": "No. The implemented display preserves source information without calculating a clinical classification."
+        },
+        {
+          "question": "Can I manually add a new measurement?",
+          "answer": "The current workspace inspects imported observations. It does not include a manual measurement-entry form."
+        }
+      ],
+      "references": [
+        {
+          "label": "PulseTrellis interface implementation",
+          "url": "https://github.com/pulsetrellis/app/blob/main/app/view.tsx"
+        }
+      ]
+    },
+    {
+      "slug": "encounters-beside-vital-signs",
+      "title": "Why nearby encounters do not prove where a vital sign was taken",
+      "description": "Understand how PulseTrellis displays encounter context without asserting an unsupported link to a selected vital measurement.",
+      "published": "2026-09-09",
+      "sections": [
+        {
+          "heading": "Two lists can share a screen without sharing an event",
+          "paragraphs": [
+            "PulseTrellis displays a selected vital observation beside other recorded encounters. This layout makes available context easier to inspect. It does not mean the selected measurement belongs to the encounter nearest it on the screen or nearest it in time."
+          ]
+        },
+        {
+          "heading": "A relationship needs evidence in the records",
+          "paragraphs": [
+            "Matching a measurement to a visit would require a supported relationship in the available data and a display that explains that relationship. Similar dates alone can be ambiguous. The current interface makes no such match and labels the encounter list accordingly."
+          ]
+        },
+        {
+          "heading": "Keep the counts literal",
+          "paragraphs": [
+            "The observation count is the number of returned vital entries. The encounter cards represent returned encounters. Neither count establishes how many visits included measurements or how complete the source history is. This helps avoid turning a navigation aid into an unsupported coverage claim."
+          ]
+        },
+        {
+          "heading": "A clear extension point",
+          "paragraphs": [
+            "A future operator could add explicit encounter linking when the data contract and source fields support it. That change should include tests for absent, ambiguous and unmatched references. Until then, the existing independent views preserve what the interface can actually substantiate."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "question": "Are all encounters connected to the selected measurement?",
+          "answer": "No. The current app explicitly avoids assuming that relationship."
+        }
+      ],
+      "finchnode": {
+        "heading": "Two categories through FinchNode, two views in PulseTrellis",
+        "text": "The implemented connection requests vitals and encounters through FinchNode, alongside demographics. PulseTrellis keeps the resulting categories distinguishable in its interface. That choice supports contextual reading without manufacturing a relationship between entries.",
+        "label": "FinchNode connection and record categories",
+        "url": "https://finchnode.com/"
+      },
+      "references": [
+        {
+          "label": "PulseTrellis interface implementation",
+          "url": "https://github.com/pulsetrellis/app/blob/main/app/view.tsx"
+        }
+      ]
+    }
+  ]
 }
