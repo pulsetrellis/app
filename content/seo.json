@@ -240,6 +240,208 @@
           "url": "https://github.com/pulsetrellis/app"
         }
       ]
+    },
+    {
+      "slug": "remote-patient-monitoring-for-small-practices",
+      "title": "Remote patient monitoring for small practices in 2026: codes, platforms and build or buy",
+      "description": "What changed in 2026 Medicare RPM billing, how full-service, software and device-API platforms differ, and when a small practice should build its own monitoring app.",
+      "published": "2026-09-28",
+      "kind": "industry",
+      "theme": "industry",
+      "sections": [
+        {
+          "heading": "Why 2026 changed the math for small programs",
+          "paragraphs": [
+            "Remote patient monitoring (RPM) used to require at least 16 days of readings in a 30-day period before a practice could bill for device supply, and 20 minutes of management time before the first management code applied. Both thresholds excluded many patients whose engagement was real but uneven.",
+            "The CPT 2026 code set and the 2026 Medicare Physician Fee Schedule added codes for shorter periods: 99445 for device supply with 2 to 15 days of data in 30 days, and 99470 for the first 10 minutes of treatment management in a calendar month with an interactive communication. The existing codes continue: 99453 for setup and education, 99454 for 16 to 30 days of data, 99457 for the first 20 minutes and 99458 for each additional 20."
+          ],
+          "links": [
+            {
+              "label": "AMA: CPT 2026 code set",
+              "url": "https://www.ama-assn.org/press-center/ama-press-releases/ama-releases-cpt-2026-code-set"
+            },
+            {
+              "label": "CMS: 2026 Physician Fee Schedule final rule",
+              "url": "https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2026-medicare-physician-fee-schedule-final-rule-cms-1832-f"
+            },
+            {
+              "label": "CCHP summary of the 2026 final rule (PDF)",
+              "url": "https://www.cchpca.org/2025/11/FINAL-2026-PHYSICIAN-FEE-SCHEDULE-FINAL.pdf"
+            }
+          ]
+        },
+        {
+          "heading": "RPM billing codes in 2026",
+          "paragraphs": [
+            "Payment amounts vary by locality. Look up current rates in the CMS Physician Fee Schedule tool rather than relying on vendor estimates."
+          ],
+          "table": {
+            "caption": "Medicare RPM codes for physiologic monitoring, 2026",
+            "columns": [
+              "Code",
+              "What it covers",
+              "New in 2026?"
+            ],
+            "rows": [
+              [
+                "99453",
+                "Initial setup and patient education",
+                "No"
+              ],
+              [
+                "99445",
+                "Device supply with 2–15 days of data in 30 days",
+                "Yes"
+              ],
+              [
+                "99454",
+                "Device supply with 16–30 days of data in 30 days",
+                "Revised"
+              ],
+              [
+                "99470",
+                "First 10 minutes of management in a month, with interactive communication",
+                "Yes"
+              ],
+              [
+                "99457",
+                "First 20 minutes of management in a month",
+                "No"
+              ],
+              [
+                "99458",
+                "Each additional 20 minutes",
+                "No"
+              ]
+            ]
+          },
+          "links": [
+            {
+              "label": "CMS Physician Fee Schedule look-up tool",
+              "url": "https://www.cms.gov/medicare/physician-fee-schedule/search"
+            }
+          ]
+        },
+        {
+          "heading": "What is proposed for 2027",
+          "paragraphs": [
+            "The proposed 2027 fee schedule, released in July 2026, would change RPM again, including a separately reportable initiating visit, limiting remote therapeutic monitoring to established patients, requirements about staff employment and a lower valuation of device costs. These are proposals; wait for the final rule before changing staffing plans."
+          ],
+          "links": [
+            {
+              "label": "CMS: 2027 Physician Fee Schedule proposed rule",
+              "url": "https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-proposed-rule"
+            }
+          ]
+        },
+        {
+          "heading": "Three kinds of RPM platform",
+          "paragraphs": [
+            "Vendors differ less in dashboards than in how much of the work they do. The market has also consolidated: Health Recovery Solutions acquired Rimidi in March 2026, ChartSpan acquired Validic in June 2026, and Accuhealth became TelliHealth after merging with Signallamp."
+          ],
+          "table": {
+            "caption": "RPM platform types",
+            "columns": [
+              "Type",
+              "Examples",
+              "What you still do",
+              "Suits"
+            ],
+            "rows": [
+              [
+                "Full service: devices, software and monitoring staff",
+                "HealthSnap, 100Plus, TelliHealth",
+                "Clinical decisions and billing sign-off",
+                "Practices without spare nursing time"
+              ],
+              [
+                "Software and devices, your staff monitor",
+                "Prevounce",
+                "Daily review, outreach and time logging",
+                "Practices with a care manager"
+              ],
+              [
+                "Devices and data API through partners",
+                "Tenovi, Validic",
+                "Choose or build the software layer",
+                "Practices or partners building their own program"
+              ]
+            ]
+          },
+          "links": [
+            {
+              "label": "HealthSnap",
+              "url": "https://healthsnap.io"
+            },
+            {
+              "label": "100Plus",
+              "url": "https://www.100plus.com"
+            },
+            {
+              "label": "TelliHealth rebrand",
+              "url": "https://tellihealth.com/news/accuhealth-and-signallamp-rebrand-as-telliHealth"
+            },
+            {
+              "label": "Prevounce RPM software",
+              "url": "https://www.prevounce.com/software/remote-patient-monitoring"
+            },
+            {
+              "label": "Tenovi",
+              "url": "https://www.tenovi.com"
+            },
+            {
+              "label": "Rimidi acquisition",
+              "url": "https://www.healthrecoverysolutions.com/blog/health-recovery-solutions-acquires-rimidi-to-expand-remote-care-programs"
+            },
+            {
+              "label": "ChartSpan acquires Validic",
+              "url": "https://www.prnewswire.com/news-releases/chartspan-acquires-validic-to-create-the-industrys-leading-platform-for-data-driven-cost-effective-clinical-care-302805910.html"
+            }
+          ]
+        },
+        {
+          "heading": "When building your own makes sense",
+          "paragraphs": [
+            "Buying is usually right for a standard hypertension or diabetes program. Building becomes reasonable when your protocol is specific: a post-surgical recovery check-in, a pharmacist-led anticoagulation program or a coaching model with its own thresholds. The monitoring logic is then yours, and you can pair it with cellular devices from a device-API vendor.",
+            "App builders have lowered the cost of trying this. Panaceum, for example, offers diabetes remote monitoring, hypertension coaching and post-surgery check-in templates with clinician and patient views. It is in early access, so HIPAA apps currently run on synthetic data until its HIPAA hosting launches; a practice can design and test the workflow now and move it to real patients later."
+          ],
+          "links": [
+            {
+              "label": "Panaceum",
+              "url": "https://panaceum.app/"
+            },
+            {
+              "label": "Tenovi device API",
+              "url": "https://www.tenovi.com"
+            }
+          ]
+        },
+        {
+          "heading": "A checklist for any RPM program",
+          "paragraphs": [
+            "Whichever platform you choose, the same operational basics decide whether a program is safe and billable."
+          ],
+          "items": [
+            "Document patient consent and who is responsible for monitoring.",
+            "Have clinicians set alert thresholds, and decide how out-of-hours readings are handled.",
+            "Track days of data per patient so you bill 99445 or 99454 correctly.",
+            "Log management time and interactive communications as they happen.",
+            "Confirm that every vendor that touches patient data has signed a business associate agreement.",
+            "Review each patient’s continued need for monitoring at regular intervals."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "question": "Can I bill RPM for patients who send only a few days of readings?",
+          "answer": "From 2026, code 99445 covers device supply when there are 2 to 15 days of data in a 30-day period. Check payer policies beyond Medicare."
+        },
+        {
+          "question": "Do I need an outside company to run RPM?",
+          "answer": "No. Some practices monitor with their own staff using software and cellular devices; others outsource monitoring. The right choice depends on your staff time."
+        }
+      ],
+      "editorialNote": "Reviewed September 28, 2026 from CMS, AMA and vendor sources. This is not billing or legal advice; confirm codes and payer rules with your billing team."
     }
   ]
 }
