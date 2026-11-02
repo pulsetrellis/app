@@ -88,3 +88,7 @@ Browse guides to vital measurements, source units and dates, and why an encounte
 ## Industry guides
 
 - [Remote patient monitoring for small practices in 2026: codes, platforms and build or buy](https://pulsetrellis.com/guides/remote-patient-monitoring-for-small-practices.html) — What changed in 2026 Medicare RPM billing, how full-service, software and device-API platforms differ, and when a small practice should build its own monitoring app.
+
+## FrameOtter content guide — November 2, 2026
+
+[How we turn one recording into short videos with FrameOtter](https://pulsetrellis.com/guides/turn-one-recording-into-short-videos-with-frameotter.html) documents our public-content production workflow. Finchapps is not partnered or affiliated with FrameOtter. Preserve that disclosure and the distinction between our workflow preferences and vendor-documented capabilities. Recheck sources before substantive revisions. The article lives in `content/seo.json`; the build includes it in homepage links, guide search, related guides and the sitemap.

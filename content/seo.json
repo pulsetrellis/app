@@ -567,6 +567,79 @@
           "answer": "It can link to an existing membership platform. If you need account management, billing or automated follow-up built into the experience, list those requirements before requesting quotes. A design package and a membership platform solve different parts of the journey."
         }
       ]
+    },
+    {
+      "slug": "turn-one-recording-into-short-videos-with-frameotter",
+      "title": "How we turn one recording into short videos with FrameOtter",
+      "description": "Plan a full walkthrough and focused short videos from one recording, with separate openings, readable crops and a review of every finished FrameOtter edit.",
+      "published": "2026-11-02",
+      "kind": "content",
+      "editorialNote": "Finchapps uses FrameOtter for its video content. Finchapps is not partnered or affiliated with FrameOtter. This is our publisher’s perspective on content production; links go directly to the named services.",
+      "sections": [
+        {
+          "heading": "Plan the short before you record the long version",
+          "paragraphs": [
+            "We use FrameOtter to edit Finchapps content, including shorter explanations drawn from a larger recording. The useful starting point is a set of audience questions. A full walkthrough can show the sequence, while a short answers one part of it without making the viewer search through the whole video.",
+            "For PulseTrellis, a full explanation might discuss a vital-sign record’s value, unit, date and source. A focused short can show where the date appears. Another can explain why a nearby encounter is separate context. Those are distinct answers, and they should not become interchangeable clips with different titles."
+          ]
+        },
+        {
+          "heading": "Identify passages that can stand on their own",
+          "paragraphs": [
+            "Look for a complete thought with a visible example and an ending. If a passage starts with “that one,” “as we said” or an unexplained result, it probably needs a new opening. Add the missing context or choose another section rather than expecting the caption to repair a confusing idea.",
+            "FrameOtter’s stream workflow describes making long videos, highlights and vertical shorts from one analyzed source. We apply the same production principle to our own approved recordings: each output gets a purpose and a separate review. That is an editorial method, not a promise that one automatic request will produce every finished asset."
+          ],
+          "links": [
+            {
+              "label": "FrameOtter: several edits from one source",
+              "url": "https://frameotter.com/stream-to-video"
+            }
+          ]
+        },
+        {
+          "heading": "Write a new opening for the smaller question",
+          "paragraphs": [
+            "A short video needs an immediate reason to watch. State the question or show the field being explained before the detail. Avoid opening with a sweeping claim that the rest of the clip cannot support. A clear promise such as “where to find the supplied measurement date” is more useful than a vague promise to understand all your health data.",
+            "Keep the qualification that belongs to the answer. In a PulseTrellis example, the date of a record and the time a viewer opens the page are different things. The short should preserve whichever distinction it is teaching, even if it costs a few extra seconds."
+          ]
+        },
+        {
+          "heading": "Reframe around the part the viewer needs",
+          "paragraphs": [
+            "A wide software demonstration rarely fits a narrow frame by simple cropping. Identify the useful screen region, keep its label visible and make sure the pointer still shows the action. If the necessary context sits outside the crop, change the shot or use a different layout.",
+            "Inspect the whole clip after reframing, because the important region can move. Captions and platform controls can cover the same lower area of the screen. Leave room for them and check playback on a small display before treating the vertical output as ready."
+          ]
+        },
+        {
+          "heading": "Keep every version connected to the full explanation",
+          "paragraphs": [
+            "Use a description that names the topic and links to the matching written article. The viewer should be able to find the broader workflow without guessing which site or guide the clip came from. Match the title to the actual question answered, not every keyword from the larger recording.",
+            "Keep a simple record of which source produced each clip. If an interface label changes, that record identifies the full video and the short versions that may need correction. Reusing a recording is useful when it reduces repeated production work without multiplying outdated explanations."
+          ]
+        },
+        {
+          "heading": "Judge the batch one video at a time",
+          "paragraphs": [
+            "Watch each export independently. Check whether a new viewer gets the point, whether the visible label agrees with the narration and whether the ending gives a useful next step. A strong full video does not automatically make every extract strong."
+          ],
+          "items": [
+            "List the full walkthrough and each narrower question.",
+            "Choose a complete passage or record a new opening.",
+            "Check the crop, labels and captions in the target format.",
+            "Link the relevant guide and retain the source-to-clip relationship."
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "question": "Should every long video become multiple Shorts?",
+          "answer": "Only when it contains separate useful answers. Publishing several versions of the same incomplete thought adds volume without helping the viewer."
+        },
+        {
+          "question": "Can we use one review for all video formats?",
+          "answer": "Review every format separately. Cropping, caption placement and a different opening can change what a viewer understands."
+        }
+      ]
     }
   ]
 }
